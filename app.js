@@ -34,12 +34,13 @@ setName()
  //1. Create an array
  let fruits = ['apple','tomato','banana'];
 //3. Declare a global variable named favFruit
-let favFruit ;
+
 //4. Create a function that will print the first fruit in the fruits array
 
 
 function printFruits(){
-    favFruit = fruits[2];
+    
+    let favFruit = fruits[2];
     console.log(fruits[0]);
     
 }
@@ -56,3 +57,10 @@ function printFavFruit(){
 //10 why was the printFavFruit function able to log favFruit? 
 //I'm not sure but when the printFruits was called earlier , it might assign the value of the variable favFruit inside the function to the variable faFruit in the global scope 
 printFavFruit();
+
+//11. Remove the declaration of favFruit in the global scope
+//12. Declare favFruit using the let keyword in the printFruits function.
+// ---> printFavFruit() does not have access to the favFruit variable and is now undefined.
+
+
+
