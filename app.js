@@ -30,3 +30,29 @@ setName()
  //11. In what order will the logs be printed?
  //Firt Line 18 ->Second Line 25  when findAvg is called at line 20 ->Third Line 22
 
+ //Scoping
+ //1. Create an array
+ let fruits = ['apple','tomato','banana'];
+//3. Declare a global variable named favFruit
+let favFruit ;
+//4. Create a function that will print the first fruit in the fruits array
+
+
+function printFruits(){
+    favFruit = fruits[2];
+    console.log(fruits[0]);
+    
+}
+
+//7. I see the first fruit printed in the console
+printFruits()
+
+//8. Declare another function that will print your favorite fruit
+
+function printFavFruit(){
+    console.log(favFruit)
+}
+
+//10 why was the printFavFruit function able to log favFruit? 
+//I'm not sure but when the printFruits was called earlier , it might assign the value of the variable favFruit inside the function to the variable faFruit in the global scope 
+printFavFruit();
